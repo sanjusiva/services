@@ -1,0 +1,20 @@
+<h1>Services</h1>
+
+
+<h4>Place : {{content}}</h4>
+<h4>Total cost : {{cost}}</h4>
+<h4>Days : {{stay}}</h4>
+<table border="1">
+    <tr style="background-color: greenyellow;" >
+        <td style="width: 100px;">S.No</td>
+        <td style="width: 100px;">Place</td>
+        <td style="width: 100px;">Cost</td>
+        <td style="width: 100px;">days</td>
+    </tr>
+    <tr *ngFor="let holiday of holi ;let i=index" style="background-color: aquamarine;">
+        <td>{{i+1}}</td>
+        <td>{{holiday.place}}</td>
+        <td>{{holiday.package}}</td>
+        <td>{{holiday.days}}</td>
+    </tr>
+</table>
